@@ -70,7 +70,7 @@ namespace wickedBackApi.Controllers
                 }
             }
 
-            return NoContent();
+            return CreatedAtAction("GetPasionaUser", new { id = pasionaUser.Id }, pasionaUser);
         }
 
         // POST: api/PasionaUsers
